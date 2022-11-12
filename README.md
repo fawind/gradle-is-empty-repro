@@ -1,6 +1,6 @@
-**Reproducer for a bug in `org.gradle.api.internal.collections.IterationOrderRetainingSetElementSource`**
+In some cases `DependencySet#size` will return `0` while `DependencySet#isEmpty` will return `false`.
 
-In some instances of `IterationOrderRetainingSetElementSource`, `Collection#size` will return `0` while `Collection#isEmpty` will return `false`.
+For more details see https://github.com/gradle/gradle/issues/22707
 
 #### Reproducer
 
